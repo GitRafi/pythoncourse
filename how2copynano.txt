@@ -1,0 +1,48 @@
+
+
+Copy text from one file to another with nano text editor
+Note: To help you understand better, we will use a
+
+source file: /var/named/athens.local
+
+destination file: /var/named/patra.local
+
+    Open the destination file (the file that want to paste the text into), by using nano's multiple buffer.
+
+nano -F destination_file
+
+So we have:
+
+nano -F /var/named/patra.local
+
+    Press Ctrl+r.
+
+    From inside nano editor, open the source file
+
+    /var/named/athens.local
+
+    Press ctrl+^ (this will enable the "mark set" mode)
+
+    Select your text.
+
+    When you have marked all the text you want, copy the text to
+
+clipboard by pressing Alt+^
+
+Note: Now your text is in clipboard.
+
+Note: In help file you will see the Alt+^ described as M-^. 
+
+    Press ctrl+x, to close the source file (/var/named/athens.local).
+
+    Now we will see the destination file (/var/named/patra.local).
+
+Move the cursor to the place you want to paste the copied text (which is
+
+in buffer, don't forget that).
+
+Press ctrl+u, to paste the text.
+
+You are done.
+
+
